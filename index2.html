@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeFanci</title>
+    <link rel="icon" href="./Logo.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('BG intro.png'); /* เปลี่ยนเป็น URL ของภาพพื้นหลัง */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            animation: zoom 3s ease-in-out infinite; /* เพิ่มแอนิเมชันซูม */
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1) translateY(0); /* ขนาดปกติ */
+            }
+            50% {
+                transform: scale(1.1) translateY(-20px); /* ซูมเข้าและเลื่อนขึ้น */
+            }
+            100% {
+                transform: scale(1) translateY(0); /* กลับมาที่ขนาดปกติ */
+            }
+        }
+
+        .play-button {
+        display: inline-block;
+        margin-top: 0px;
+        padding: 0px 0px;
+        font-size: 20px;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        transform: translate(10px, -200px);
+        animation: zoom 3s ease-in-out infinite; /* เพิ่มแอนิเมชันซูม */
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1) translateY(0px); /* ขนาดปกติ */
+            }
+            50% {
+                transform: scale(1.1) translateY(-50px); /* ซูมเข้าและเลื่อนขึ้น */
+            }
+            100% {
+                transform: scale(1) translateY(0); /* กลับมาที่ขนาดปกติ */
+            }
+        }
+
+        .play-button img {
+        width: 300px; /* ปรับความกว้าง */
+        height: auto; /* ปรับความสูงตามสัดส่วนของรูป */
+        }
+
+        .play-button:hover {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="Logo.png" alt="BeFanci Logo" class="logo"> 
+    <button class="play-button" onclick="goToNextPage()">
+        <img src="play.png" alt="Play Button Image">
+    </button>
+</div>
+
+<script>
+    function goToNextPage() {
+        window.location.href = "index.html"; // ลิงก์ไปยังไฟล์ในโฟลเดอร์ที่ต้องการ
+    }
+</script>
+</body>
+</html>

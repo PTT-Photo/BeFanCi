@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeFanci</title>
+    <link rel="icon" href="./Logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="character">
+            <img id="character-body" src="Body_1.png" alt="Character">
+            <img id="character-eyes" src="Eyes_01_GY.png" alt="Character Eyes" style="position: absolute; top: 66px; left: 0px; width: 260px; height: 400px;">
+            <img id="character-eyebrows" src="Eyebrows_01_BK.png" alt="Character eyebrows" style="position: absolute; top: 67px; left: 0px; width:260px; height: 400px;">
+            <img id="character-mouth" src="Mouth_01.png" alt="Character mouth" style="position: absolute; top: 64px; left: 0px; width:260px; height: 400px;">
+            <img id="character-hair" src="Hair_01_GY.png" alt="Character Hair" style="position: absolute; top: 62px; left: 0px; width:260px; height: 400px;">
+            <img id="character-bottom" src="Bottom_01.png" alt="Character Bottom" style="position: absolute; top: 42px; left: 2px; width:255px; height: 400px;">
+            <img id="character-top" src="Top_01.png" alt="Character Top" style="position: absolute; top: 60px; left: -2px; width:265px; height: 400px;">
+        </div>
+        <div class="ui-panel">
+            <div class="category-buttons">
+                <button id="Body-image"><img src = "Body.PNG" id="Body-Click"></button>
+                <button id="Eyes-image"><img src = "Eyes.PNG" id="Eyes-Click"></button>
+                <button id="Eyebrows-image"><img src = "Eyebrows.PNG" id="Eyebrows-Click"></button>
+                <button id="Mouth-image"><img src = "Mouth.PNG" id="Mouth-Click"></button>
+                <button id="Hair-image"><img src = "Hair.PNG" id="Hair-Click"></button>
+                <button id="Top-image"><img src = "Top.PNG" id="Top-Click"></button>
+                <button id="Bottom-image"><img src = "Bottom.PNG" id="Bottom-Click"></button>
+                <button id="Shoes-image"><img src = "Shoes.PNG" id="Shoes-Click"></button>
+                <button id="Hat-image"><img src = "Hat.PNG" id="Hat-Click"></button>
+            </div>
+            <div class="color-picker">
+                <div class="color grey">
+                    <button id="gray-bg-button">
+                        <img src="G.png" id="G-Click" alt="G Image">
+                    </button>
+                </div>
+                <div class="color blue">
+                    <button id="blue-bg-button">
+                        <img src = "B.png" id="B-Click" alt="B Image">
+                    </button>
+                </div>
+                <div class="color blue2">
+                    <button id="blue2-bg-button">
+                        <img src = "BB.png" id="BB-Click" alt="BB Image">
+                    </button>
+                </div>
+                <div class="color green">
+                    <button id="green-bg-button">
+                        <img src = "GR.png" id="GR-Click" alt="GR Image">
+                    </button>
+                </div>
+                <div class="color yellow">
+                    <button id="yellow-bg-button">
+                        <img src = "Y.png" id="Y-Click" alt="Y Image">
+                    </button>
+                </div>
+                <div class="color orange">
+                    <button id="orange-bg-button">
+                        <img src = "O.png" id="O-Click" alt="O Image">
+                    </button>
+                </div>
+                <div class="color red">
+                    <button id="red-bg-button">
+                        <img src = "R.png" id="R-Click" alt="R Image">
+                    </button>
+                </div>
+                <div class="color pink2">
+                    <button id="pink2-bg-button">
+                        <img src = "Pink2.png" id="Pink2-Click" alt="Pink2 Image">
+                    </button>
+                </div>
+                <div class="color pink1">
+                    <button id="pink1-bg-button">
+                        <img src = "Pink1.png" id="Pink1-Click" alt="Pink1 Image">
+                    </button>
+                </div>
+                <div class="color purple">
+                    <button id="purple-bg-button">
+                        <img src = "PU.png" id="PU-Click" alt="PU Image">
+                    </button>
+                </div>
+                <div class="color cyan">
+                    <button id="cyan-bg-button">
+                        <img src = "C.png" id="C-Click" alt="C Image">
+                    </button>
+                </div>
+                <div class="color black">
+                    <button id="black-bg-button">
+                        <img src = "Bl.png" id="Bl-Click" alt="Bl Image"></button>
+                </div>
+            </div>
+            <!-- Body -->
+            <div class="item-grid" id="Body-items">
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_1.png')"><img src="Base_1.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_2.png')"><img src="Base_2.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_3.png')"><img src="Base_3.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_4.png')"><img src="Base_4.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_5.png')"><img src="Base_5.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_6.png')"><img src="Base_6.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_7.png')"><img src="Base_7.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_8.png')"><img src="Base_8.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_9.png')"><img src="Base_9.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_10.png')"><img src="Base_10.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_11.png')"><img src="Base_11.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_12.png')"><img src="Base_12.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_13.png')"><img src="Base_13.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Body', 'Body_14.png')"><img src="Base_14.png"></button>
+                </div>
+            </div>
+            <!-- Eyes -->
+            <div class="item-grid" id="Eyes-items" style="display: none;">
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_GY.png')"><img src="E Click_1.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_LB.png')"><img src="E Click_2.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_B.png')"><img src="E Click_3.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_GR.png')"><img src="E Click_4.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_Y.png')"><img src="E Click_5.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_O.png')"><img src="E Click_6.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_R.png')"><img src="E Click_7.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_WP.png')"><img src="E Click_8.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_CP.png')"><img src="E Click_9.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_P.png')"><img src="E Click_10.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_Cyan.png')"><img src="E Click_11.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_01_BK.png')"><img src="E Click_12.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_GY.png')"><img src="E Click02_1.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_LB.png')"><img src="E Click02_2.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_B.png')"><img src="E Click02_3.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_GR.png')"><img src="E Click02_4.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_Y.png')"><img src="E Click02_5.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_O.png')"><img src="E Click02_6.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_R.png')"><img src="E Click02_7.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_WP.png')"><img src="E Click02_8.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_CP.png')"><img src="E Click02_9.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_P.png')"><img src="E Click02_10.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_C.png')"><img src="E Click02_11.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyes', 'Eyes_02_BK.png')"><img src="E Click02_12.png"></button>
+                </div>
+            </div>
+            <!-- Eyebrows -->
+            <div class="item-grid" id="Eyebrows-items" style="display: none;">
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyebrows', 'Eyebrows_01_BK.png')"><img src="EB_1.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyebrows', 'Eyebrows_02_BK.png')"><img src="EB_2.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Eyebrows', 'Eyebrows_03_BK.png')"><img src="EB_3.png"></button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Eyebrows_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+            </div>
+            <!-- Mouth -->
+            <div class="item-grid" id="Mouth-items" style="display: none;">
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_01.png')"><img src="M_1.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_02.png')"><img src="M_2.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_03.png')"><img src="M_3.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_04.png')"><img src="M_4.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_05.png')"><img src="M_5.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_06.png')"><img src="M_6.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_07.png')"><img src="M_7.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_08.png')"><img src="M_8.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_09.png')"><img src="M_9.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_10.png')"><img src="M_10.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Mouth', 'Mouth_11.png')"><img src="M_11.png"></button>
+                </div>
+                <div class="item">
+                    <button id="Mouth_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Mouth_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Mouth_1">
+                        <img src="NO.png" alt="Mouth1 Image">
+                    </button>
+                </div>
+            </div>
+            <!-- Hair -->
+            <div class="item-grid" id="Hair-items" style="display: none;">
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_GY.png')"><img src="H_Click_1.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_LB.png')"><img src="H_Click_2.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_B.png')"><img src="H_Click_3.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_GR.png')"><img src="H_Click_4.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_Y.png')"><img src="H_Click_5.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_O.png')"><img src="H_Click_6.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_R.png')"><img src="H_Click_7.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_WP.png')"><img src="H_Click_8.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_CP.png')"><img src="H_Click_9.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_P.png')"><img src="H_Click_10.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_C.png')"><img src="H_Click_11.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_01_BK.png')"><img src="H_Click_12.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_GY.png')"><img src="H02_Click_1.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_LB.png')"><img src="H02_Click_2.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_B.png')"><img src="H02_Click_3.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_GR.png')"><img src="H02_Click_4.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_Y.png')"><img src="H02_Click_5.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_O.png')"><img src="H02_Click_6.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_R.png')"><img src="H02_Click_7.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_WP.png')"><img src="H02_Click_8.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_CP.png')"><img src="H02_Click_9.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_P.png')"><img src="H02_Click_10.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_C.png')"><img src="H02_Click_11.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_03_BK.png')"><img src="H02_Click_12.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_GY.png')"><img src="H03_Click_1.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_LB.png')"><img src="H03_Click_2.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_B.png')"><img src="H03_Click_3.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_GR.png')"><img src="H03_Click_4.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_Y.png')"><img src="H03_Click_5.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_O.png')"><img src="H03_Click_6.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_R.png')"><img src="H03_Click_7.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_WP.png')"><img src="H03_Click_8.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_CP.png')"><img src="H03_Click_9.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_P.png')"><img src="H03_Click_10.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_C.png')"><img src="H03_Click_11.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Hair', 'Hair_04_BK.png')"><img src="H03_Click_12.png"></button>
+                </div>
+            </div>
+            <!-- Top -->
+            <div class="item-grid" id="Top-items" style="display: none;">
+                <div class="item">
+                    <button onclick="changeCharacterPart('Top', 'Top_01.png')"><img src="T_1.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Top', 'Top_02.png')"><img src="T_2.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Top', 'Top_03.png')"><img src="T_3.png"></button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Top_01">
+                        <img src="NO.png" alt="Top1 Image">
+                    </button>
+                </div>
+            </div>
+            <!-- Bottom -->
+            <div class="item-grid" id="Bottom-items" style="display: none;">
+                <div class="item">
+                    <button onclick="changeCharacterPart('Bottom', 'Bottom_01.png')"><img src="BT_1.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Bottom', 'Bottom_02.png')"><img src="BT_2.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Bottom', 'Bottom_03.png')"><img src="BT_3.png"></button>
+                </div>
+                <div class="item">
+                    <button onclick="changeCharacterPart('Bottom', 'Bottom_04.png')"><img src="BT_4.png"></button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+            </div>
+            <!-- Shoes -->
+            <div class="item-grid" id="Shoes-items" style="display: none;">
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+            </div>
+            <!-- Hat -->
+            <div class="item-grid" id="Hat-items" style="display: none;">
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+                <div class="item">
+                    <button id="Bottom_01">
+                        <img src="NO.png" alt="Bottom1 Image">
+                    </button>
+                </div>
+            </div>
+            <div class="control-buttons">
+                <a href="https://forms.gle/4joaopzyPjZtFAoz9" target="_blank">
+                    <button>
+                        <img src="form.png" alt="Form Image">
+                    </button>
+                </a>
+                <button><img src="setting.png"></button>
+                <button id="saveButton"><img src="import.png"></button>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
